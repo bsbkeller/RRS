@@ -6,16 +6,24 @@
 \usepackage{amssymb}
 \newcommand{\mb}[1]{\mbox{\boldmath $\bf#1$}}
 \newcommand{\mbi}[1]{\mbox{\mathit{\boldmath $\bf#1$}}}
-\newcommand{\fn}[1]{\textbf{\texttt{$\bf#1$}}}
+\newcommand{\fn}[1]{\textbf{\texttt{#1}}}
+\newcommand{\ttt}[1]{\texttt{#1}}
 \setlength{\textwidth}{6.5in}\setlength{\textheight}{9.2in}
 \setlength{\oddsidemargin}{-.05in} \setlength{\topmargin}{-.5in}
 \newcommand{\bibnodot}[1]{} 
 \title{\texttt{R} Reference Sheet}
-\author{Bryan Keller}
+\author{Bryan Keller, Add Yourself As You Contribute}
 
 \begin{document}
+\maketitle
 
 \section{Getting Help}
-\fn{help(topic)} documentation on \texttt{topic} \\
+\fn{help(topic)} documentation on \ttt{topic} \\
+\fn{?topic} documentation on \ttt{topic} \\
+\fn{help.search(topic)} searches help system for \ttt{topic} \\
+\fn{??(topic)} searches help system for \ttt{topic} \\
+If \ttt{help(topic)} throws an error, try \ttt{help("topic")} \\
+\tt{\textbf{topic}}
+
 
 \end{document}
