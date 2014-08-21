@@ -6,11 +6,11 @@
 \usepackage{amssymb}
 \newcommand{\mb}[1]{\mbox{\boldmath $\bf#1$}}
 \newcommand{\mbi}[1]{\mbox{\mathit{\boldmath $\bf#1$}}}
-\newcommand{\fn}[1]{\textbf{\texttt{#1}}}
-\newcommand{\ttt}[1]{\texttt{#1}}
 \setlength{\textwidth}{6.5in}\setlength{\textheight}{9.2in}
 \setlength{\oddsidemargin}{-.05in} \setlength{\topmargin}{-.5in}
-\newcommand{\bibnodot}[1]{} 
+\DeclareFontShape{OT1}{cmtt}{bx}{n}{<5><6><7><8><9><10><10.95><12><14.4><17.28><20.74><24.88>cmttb10}{}
+\newcommand{\bt}[1]{\textbf{\texttt{#1}}} % Command for BOLD TYPEWRITER font.
+\newcommand{\pt}[1]{\texttt{#1}}          % Command for PLAIN TYPEWRITER font.
 \title{\texttt{R} Reference Sheet}
 \author{Bryan Keller, Add Yourself As You Contribute}
 
@@ -18,12 +18,13 @@
 \maketitle
 
 \section{Getting Help}
-\fn{help(topic)} documentation on \ttt{topic} \\
-\fn{?topic} documentation on \ttt{topic} \\
-\fn{help.search(topic)} searches help system for \ttt{topic} \\
-\fn{??(topic)} searches help system for \ttt{topic} \\
-If \ttt{help(topic)} throws an error, try \ttt{help("topic")} \\
-\tt{\textbf{topic}}
+\bt{help(topic)} documentation on \pt{topic} \\
+\bt{?topic} id. \\
+\bt{help.search(topic)} searches help system for \pt{topic} \\
+\bt{??(topic)} id. \\
+If \pt{help(topic)} throws an error, try \pt{help("topic")} \\
+\bt{example(topic)} gives an example for \pt{topic} if available \\
+\bt{RSiteSearch("keywords")} searches help system for \pt{keywords} \\
 
 
 \end{document}
